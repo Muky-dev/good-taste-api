@@ -4,12 +4,12 @@ namespace RecipesApi.Models;
 
 public class Recipe
 {
-    public int Id { get; set; }
+    public int RecipeId { get; set; }
 
     [Required]
     public string Name { get; set; }
     public string Description { get; set; }
-    public List<string> Tags { get; set; }
-    public List<string> Steps { get; set; }
-    public List<string> Ingredients { get; set; }
+    public User Author { get; set; }
+
+    public List<Favorite> Favorites { get; set; }
 }
