@@ -12,4 +12,6 @@ public class Recipe
     public User Author { get; set; }
 
     public List<Favorite> Favorites { get; set; }
+
+    public ICollection<Tag> Tags { get; set; }
 }
